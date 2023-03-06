@@ -62,8 +62,23 @@ header{
     height: 60px;
 }
 header #iconelateral{
-
+/* willy */
 }
 header .risco{
     border: 5px solid #C4C4C4;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* Tablets >=768px ate 992px */
+@media screen and (max-width:992px) {
+    
+}
+
+/* Smartphones >=0 ate 768px */
+@media screen and (max-width:767px){
+    
 }
