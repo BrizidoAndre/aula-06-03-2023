@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devs</title>
+    <link rel="stylesheet" href=Styles/style.css>
+</head>
+<body>
+    <header>
+        <div class="layout-grid header-flex">
+            <div>
+                <nav id="navmenu">
+                    <a href="">inicio</a>
+                    <a href="">sobre</a>
+                    <a href="">desafios</a>
+                    <a href="">endereços</a>
+                </nav>
+                <img src="../aula-06-03-2023/Assets/Icons/menu_FILL0_wght400_GRAD0_opsz48.svg" id="menu-mobile" alt="menu lateral em mobile" onclick="mostramenu()">
+            </div>
+        </div>
+        </header>
+        <main>
+            <article class="banner">  
+                <div class="layout-grid"s>
+                    <h1>Desenvolvimento <br> de Sistemas 2021
+                    </h1>
+                    <div class="linha"></div>
+                    <h2>senai informática</h2>
+                    <img id="img-icon" src="../aula-01-03-2023-2/Assets/Imgs/mouse.svg" alt="Ícone de Mouse">
+                </div>
+            </article>
+            <section class="projetos">
+                <div class="layout-grid">
+                        <h3 id="projectitle">
+                            Sobre os projetos
+                        </h3>
+                        <div class="spacebetween">
+                            <!-- essa div agrupa a imagem com a outra div que agrupa os textos ela é responsável por ajustar o espaço  -->
+                            <img src="../aula-01-03-2023-2/Assets/Imgs/imagem-seção-sobre.png" alt="">
+                            <div>
+                            <!-- Essa div agrupa os títulos e textos -->
+                                <h4>Participantes</h4>
+                                <h3>
+                                Mais de 80 alunos <br> organizados em 16 grupos</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur dolorem facere in quos, consequuntur labore laborum omnis velit necessitatibus modi eos, obcaecati ad quas praesentium nulla? Corrupti, alias dignissimos!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum aspernatur magni esse porro asperiores officiis ducimus odit, eius numquam, quidem nisi laudantium in itaque provident. Quam quaerat labore ad?
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <div class="infobackground">
+                <section class="layout-grid info">
+                    <article>
+                        <h4>
+                            local
+                        </h4>
+                        <div class="infobox">
+                            <h6>São Paulo</h6>
+                        </div>
+                    </article> 
+                    <article>
+                        <h4>
+                            Duração
+                        </h4>
+                        <div class="infobox">
+                            <h6>90 dias</h6>
+                        </div>
+                    </article>
+                    <article>      
+                        <h4>
+                            Desafios
+                        </h4>
+                        <div class="infobox">
+                            <h6>+30 desafios</h6>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            </main>
+        <footer>
+            <div id="footerbackground">
+                <div class="layout-grid footerflex">
+                    <!-- Outra div criada porque se adicionarmos essa classe ao footer ela passa a afetar a formatação da imagem de background -->
+                    <h3 id="footertitle">Endereço</h3>
+                    <div id="caixaendereco">
+                        <p id="enderecotexto"> Alameda Barão de Limeira, 539 <br>Santa Cecilia, São Paulo - SP <br> CEP: 01202-001</p>
+                        <img id="mapaendereco" src="../aula-01-03-2023-2/Assets/Imgs/mapa.png" alt="Mapa em 2D visto de cima com uma marcação vermelho no centro indicando o endereço antigo do Senai">
+                    </div>
+                </div>
+                <div id="footerdireitos">
+                    <p id="footertexto">Copyright @ 2020 - Escola Senai de Informática</p>
+                </div>
+            </div>
+            <script>
+                function mostramenu(){
+                    document.getElementById("navmenu").classList.toggle("mostramenu");
+                }
+            </script>
+            </footer>
+</body>
+</html>

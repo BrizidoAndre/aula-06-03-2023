@@ -1,0 +1,262 @@
+/* Importando 3 fontes para a representação do site */
+@font-face {
+    font-family: "bebas-neue";
+    src: url(../Assets/Fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Open-sans-italic";
+    src: url(../Assets/Fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf)
+}
+@font-face {
+    font-family: "Open-sans-regular";
+    src: url(../Assets/Fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080324;
+}
+h1{
+    font-family: bebas-neue;
+    text-transform: uppercase;
+    color: white;
+    font-size: 96px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    text-transform: uppercase;
+    color: #F9003D;
+}
+h3{
+    font-family: "bebas-neue";
+    text-transform: uppercase;
+    font-size: 64px;
+    color: #FFAF00;
+}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+h6{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #A259F7;
+    text-transform: uppercase;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-family: "open-sans-regular";
+    width: 592px;
+}
+.layout-grid{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* É a margem de 10% de cada lado, esta será usada no main */
+}
+header .header-flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* É a margem de 10% de cada lado específica para o cabeçalho */
+}
+header{
+    display: flex;
+    align-items: center;
+
+    height: 60px;
+    width: auto;
+    background-color: #F9003D;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 591px;
+    height: 22px;
+}
+header nav a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    font-size: 18px;
+    font-family: "bebas-neue";
+    text-shadow: 2px 5px 10px black;
+    letter-spacing: 2px;
+}
+body main .banner{
+    background-image: url(../Assets/Imgs/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+    height: 740px;
+
+    padding-top: 226px ;
+
+    display: flex;
+    flex-direction: column;
+}
+body .linha{
+    height: 1;
+    border: 1px solid #ffaf00;
+    width: 545px;
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
+#img-icon{
+    width: 37.31px;
+    height: 80px;
+    margin-top: 29px;
+}
+main .projetos{
+    background-color: #080324;
+    width: auto;
+    height: 807px;
+}
+main section #projectitle{
+    font-family: "bebas-neue";
+    font-size: 64px;
+    color: #F9003D;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+main .infobackground{
+    background-image: url(../Assets/Imgs/imagem-fundo-info.png);
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+    height: 193px;
+}
+main .info{
+    padding-top: 28px;
+
+    display: flex;
+    justify-content: space-between;
+}
+main .infobox{
+    width: 289px;
+    height: 100px;
+    border: 1px solid #A259F7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer #footerbackground{
+    background-image: url(../Assets/Imgs/imagem-fundo-endereco.png);
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+    
+}
+footer .footerflex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+
+    width: 899px;
+}
+footer #footertitle{
+    margin: 82px 0 36.72px 0;
+}
+footer #caixaendereco{
+    border: 2px solid #340B65;
+    background-color: #010010;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    padding-right: 25px;
+    padding-left: 66px;
+
+    margin-bottom: 144.12px;
+
+    width: 899px;
+    height: 203.36px;
+}
+footer #enderecotexto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    line-height: 27.19px;
+    color: #A259F7;
+}
+footer #mapaendereco{
+    position: absolute;
+    right: 25px;
+    bottom: 27.3px;
+}
+footer #footerdireitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F9003D;
+
+    height: 82px;
+}
+footer #footertexto{
+    width: auto;
+}
+header #menu-mobile{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+/* Tablets >=768px ate 992px */
+@media screen and (max-width:991px) {
+    header #menu-mobile{
+        display: none;
+    }
+}
+
+/* Smartphones >=0 ate 768px */
+@media screen and (max-width:767px){
+
+    .mostramenu{
+        left: 0;
+    }
+    header #menu-mobile {
+        display: block;
+    }
+
+    header nav {
+        position: fixed;
+        top: 59px;
+        left: -800px;
+
+        height: calc(100% - 60px); 
+        /* VH viewport height */
+        /* VW viewport widht */
+        /* As unidades de medida acima usam como referencia a viewport do usuario */
+        width: 80%;
+        background-color: #F9003D;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    main, footer{
+        display: none;
+    }
+
+
+
+}
