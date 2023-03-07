@@ -231,6 +231,7 @@ header #menu-mobile{
 
     .mostramenu{
         left: 0;
+        opacity: 1;
     }
     header #menu-mobile {
         display: block;
@@ -239,7 +240,7 @@ header #menu-mobile{
     header nav {
         position: fixed;
         top: 59px;
-        left: -800px;
+        left: -80vw;
 
         height: calc(100% - 60px); 
         /* VH viewport height */
@@ -248,9 +249,12 @@ header #menu-mobile{
         width: 80%;
         background-color: #F9003D;
 
+        
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        transition: left 0.7s, opacity 0.9s;
+        opacity: 0;
     }
 
     main, footer{
